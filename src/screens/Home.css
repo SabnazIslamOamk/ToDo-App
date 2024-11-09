@@ -1,0 +1,98 @@
+/* General styling for the container */
+#container {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the title (Todos) */
+  #container h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  form input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #007BFF;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling each individual task row */
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Add some space between text and the delete button */
+  ul li span {
+    flex-grow: 1;
+  }
+  
+  /* Delete button styling */
+  ul li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 80px;
+  }
+  
+  ul li button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsiveness: Ensure layout adjusts well on smaller screens */
+  @media (max-width: 600px) {
+    #container {
+      padding: 15px;
+    }
+  
+    form input {
+      width: 100%;
+    }
+  }
+  
